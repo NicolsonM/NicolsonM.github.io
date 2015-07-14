@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Магазин</title>
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/style.css">
+<script type="text/javascript">
+window.onload = function () {
+    var menuElem = document.getElementById('sweeties');
+    var titleElem = menuElem.querySelector('.title');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+}
+</script>																																																																																					
+</head>
+
+<body>
+<div id="cont">
+	<div id="contcontent">
+		<p id="tel">CUSTOM CARE: 888-23-4567</p>
+	</div><!--end of contcontent-->
+</div><!--end of cont-->
+<div id="nav">
+	<div id="navcontent">
+    	<div id="looks">
+        	<img src="images/homepage_desktop.png">
+        </div><!--end of looks-->
+        <div id="forma"></div>
+        <ul>
+            	<li><a href="#">home</a></li>
+                <li><a href="#">products</a>
+                	<ul>
+                    	<li><a href="#">women</li>
+                        <li><a href="#">men</li>
+                        <li><a href="#">children</li>
+                    </ul>
+                </li>
+                <li><a href="#">shopping</a></li>
+                <li><a href="#">contacts</a></li>
+         </ul>
+       	
+    </div><!--end of navcontent-->
+</div><!--end of nav-->
+</body>
+</html>

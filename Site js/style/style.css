@@ -1,0 +1,71 @@
+body
+	{
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+#cont
+	{
+		height:30px;
+		background-color:black;
+	}
+#contcontent
+	{
+		background-color:black;
+		height:30px;
+		width:980px;
+		margin:0 auto;
+	}
+#tel
+	{	
+		font-size:11px;
+		color:#fff;
+		/*position:absolute;*/
+		padding-top:11px;
+	}
+#nav
+	{
+		height:106px;
+		background-color:#fff;
+	}
+#navcontent
+	{
+		background-color:#fff;
+		height:106px;
+		width:980px;
+		margin:0 auto;
+	}
+#looks
+	{
+		padding-top:42px;
+		overflow:hidden;
+	}
+#navcontent ul{
+	overflow:hidden;
+	float:right;
+	margin-top:-40px;
+	margin-right:20px;
+	}
+#navcontent ul li{
+	float:left;
+	position:relative;
+	}
+#navcontent ul li a{
+	text-decoration:none;
+	color:black;
+	font-size:16pt;
+	display:block;
+	padding:12px 16px;
+	}
+#navcontent ul li ul
+	{
+		display:none;
+		position:absolute;
+		top:75px;
+	}
+#forma
+	{
+		width:214px;
+		height:64px;
+		border:1px solid #ccc;
+		float:right;
+		margin-top:-55px;
+	}
