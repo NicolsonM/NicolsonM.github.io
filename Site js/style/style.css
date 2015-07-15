@@ -39,7 +39,6 @@ body
 		overflow:hidden;
 	}
 #navcontent ul{
-	overflow:hidden;
 	float:right;
 	margin-top:-40px;
 	margin-right:20px;
@@ -57,9 +56,9 @@ body
 	}
 #navcontent ul li ul
 	{
-		/*display:none;*/
+		display:none;
 		position:absolute;
-		top:85px;
+		top:75px;
 	}
 #navcontent ul li ul li
 	{
