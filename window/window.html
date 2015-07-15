@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Window</title>
+<script type="text/javascript">
+window.onload = function()
+{
+	document.getElementById("openButton").onclick = openWindow;
+	var w;
+	var myWidth = 0;
+	var myHeight = 0;
+	function openWindow(){
+	 myWidth = screen.width / 2;
+	 myHeight = screen.height / 2;
+		w = window.open("window2.html", "Window Name", "width= "+ myWidth,"height= "+ myHeight);
+	}
+
+}
+</script>
+</head>
+
+<body>
+<input type="button" id="openButton" value="Открыть" />
+</body>
+</html>
