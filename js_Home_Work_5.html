@@ -1,0 +1,31 @@
+<html>
+<head>
+
+<title> Home </title>
+<script>
+var Persone = {};
+Persone.name = prompt("Введите имя");
+Persone.serName = prompt("Введите второе имя");
+Persone.dateB = prompt("Введите дату рождения");
+Persone.Address = {};
+Persone.Address.cyty = prompt("Введите Город");
+Persone.Address.street = prompt("Введите Улицу");
+
+for(var element in Persone)
+	{
+
+        document.write("<p>" + Persone[element]);
+
+    }
+if(element == Persone)
+    {
+    for(var element in Persone)
+        document.write("<p>" + Persone[element]);
+    }
+
+ </script>
+</head>
+<body>
+
+</body>
+<html>

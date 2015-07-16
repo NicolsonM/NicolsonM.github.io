@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>but</title>
+<style type="text/css">
+#test{
+width:100px;
+height:100px;
+background-color:#993399;
+position:relative;
+}
+</style>
+<script type="text/javascript">
+window.onload = function()
+{
+	var a = document.getElementById("test");
+	document.getElementById("left").onclick = leftB;
+	document.getElementById("right").onclick = rightB;
+	document.getElementById("top").onclick = topB;
+	document.getElementById("bottom").onclick = bottomB;
+	
+	function leftB()
+	{
+		
+		
+			a.style.left = "-100px";
+		
+	}
+	function rightB()
+	{
+		
+		
+			a.style.right = "-100px";
+		
+	}
+	function topB()
+	{
+		
+		
+			a.style.top = "-100px";
+		
+	}
+	function bottomB()
+	{
+		
+		
+		a.style.bottom = "-100px";
+		
+	}
+}
+</script>
+</head>
+
+<body>
+<input id="left" type="button" value="Left" />
+<input id="right" type="button" value="Right" />
+<input id="top" type="button" value="Top" />
+<input id="bottom" type="button" value="Bottom" />
+<div id="test">Text</div>
+
+</body>
+</html>
