@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>event</title>
+<script type="text/javascript">
+window.onload = function()
+{
+	var body = document.getElementsByTagName("body")[0];
+		
+			body.onkeypress = function(e)
+			{	
+				if(e.charCode == 103)
+				{
+					body.style.color = "green";
+				}
+				else if(e.charCode == 98)
+				{
+					body.style.color = "blue";
+				}
+				else if (e.charCode == 114)
+				{
+					body.style.color = "red";
+				}
+			}
+		
+}
+</script>
+</head>
+
+<body>
+
+<p>Первый</p>
+<p>Второй</p>       
+<p>Третий</p>
+</body>
+</html>
