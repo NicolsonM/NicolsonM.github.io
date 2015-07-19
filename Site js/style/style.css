@@ -72,3 +72,18 @@ body
 		float:right;
 		margin-top:-55px;
 	}
+#header
+	{
+		height:570px;
+	}
+#headercontent
+	{
+		height:570px;
+		width:980px;
+		margin:0 auto;
+	}
+#slider
+	{
+		height:440px;
+		background-image:url(../images/crazy_summer.png);
+	}
