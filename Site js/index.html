@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -36,8 +36,21 @@ window.onload = function () {
 					b.setAttribute("style", "display:none");
 					b.style.display = "none";
 				}
-		}	
-	
+	}
+
+	var slider = document.getElementById("slider");
+	var leftS = document.getElementById("buts1");
+	var rightS = document.getElementById("buts2");
+	leftS.addEventListener("click",
+        function () {
+            slider.style.left = "960px";
+        }, false
+        );
+	rightS.addEventListener("click",
+        function () {
+            slider.style.right = "960px";
+        }, false
+        );
 }
 </script>																																																																																					
 </head>
