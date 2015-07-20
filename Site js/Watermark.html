@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        
+        window.onload = function () {
+            var watermark = "YOUR CART";
+            var input = document.forms[0].cart;
+            initInput();
+            function initInput() {
+                input.value = watermark;
+                input.style.color = "gray";
+                input.style.fontStyle = "normal";
+            }
+            input.onfocus = function () {
+                if (input.value == watermark) {
+                    input.value = "";
+                    input.style.color = "black";
+                    input.style.fontStyle = "normal";
+                }
+            }
+            input.onblur = function () {
+                if (input.value == "") {
+                    initInput();
+                }
+            }
+            var watermarkItems = "ITEMS";
+            var input = document.forms[1].items;
+            initInputItems();
+            function initInputItems() {
+                input.value = watermarkItems;
+                input.style.color = "gray";
+                input.style.fontStyle = "normal";
+            }
+            input.onfocus = function () {
+                if (input.value == watermarkItems) {
+                    input.value = "";
+                    input.style.color = "black";
+                    input.style.fontStyle = "normal";
+                }
+            }
+            input.onblur = function () {
+                if (input.value == "") {
+                    initInputItems();
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="forma">
+    <form>
+        <input type="text" name="cart" />
+    </form>
+    <form>
+        <input type="text" name="items" />
+    </form>
+        </div>
+</body>
+</html>
