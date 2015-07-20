@@ -38,6 +38,28 @@ window.onload = function () {
 				}
 	}
 
+
+	var watermark = "YOUR CART";
+	var input = document.forms[0].cart;
+	initInput();
+	function initInput() {
+	    input.value = watermark;
+	    input.style.color = "gray";
+	    input.style.fontStyle = "normal";
+	}
+	input.onfocus = function () {
+	    if (input.value == watermark) {
+	        input.value = "";
+	        input.style.color = "black";
+	        input.style.fontStyle = "normal";
+	    }
+	}
+	input.onblur = function () {
+	    if (input.value == "") {
+	        initInput();
+	    }
+	}
+
 	var slider = document.getElementById("slider");
 	var leftS = document.getElementById("buts1");
 	var rightS = document.getElementById("buts2");
@@ -66,7 +88,13 @@ window.onload = function () {
     	<div id="looks">
         	<img src="images/homepage_desktop.png">
         </div><!--end of looks-->
-        <div id="forma"></div>
+        <div id="forma">
+            <form>
+                <input type="text" name="cart" />
+                <br />
+                <input type="text" name="items" />
+            </form>
+        </div>
         <ul id="myMenu">
             	<li><a href="#">home</a></li>
                 <li id="menuProducts" id="menuClose" ><a href="#">products</a>

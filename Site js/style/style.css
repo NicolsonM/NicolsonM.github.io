@@ -68,10 +68,15 @@ body
 	{
 		width:214px;
 		height:64px;
-		border:1px solid #ccc;
+		
 		float:right;
 		margin-top:-55px;
 	}
+#forma form input
+    {
+        width:214px;
+        height:32px;
+    }
 #header
 	{
 		height:570px;
