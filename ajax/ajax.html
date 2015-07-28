@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Ajax</title>
+<script type="text/javascript">
+window.onload = function () {
+
+	var s = document.getElementById("btn");
+	
+	s.onclick = function()
+		{
+			var a1 = document.getElementById("first").value;
+			var b1 = document.getElementById("second").value;
+			
+		
+	var xhr = new XMLHttpRequest();
+	// настройка объекта запроса с указание метода отправи запроса и данных
+	xhr.open("POST", "CalcHandler.ashx");
+	
+	
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState == 4 && xhr.status == 200)
+		{
+			document.getElementById("output").innerHTML = xhr.responseText;
+		}
+	}
+	// отправка запроса с указанием данных.
+	xhr.send("a=" + a1 + "&b=" + b1);
+}
+}
+</script>
+</head>
+
+<body>
+<form>
+	<input id="first" type="text" ><br/>
+    <input id="second" type="text"><br/> 
+    <input id="btn" type="button" value="Send">  
+</form>
+ <p id="output"></p>
+</body>
+</html>
