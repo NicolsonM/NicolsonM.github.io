@@ -87,12 +87,14 @@ body
 		width:980px;
 		margin:0 auto;
 	}
-#slider
+#scr
 	{
 		height:440px;
-		background-image:url(../images/crazy_summer.png);
+        width:980px;
+		background-color:#fff;
+        background-size: cover;
 	}
-#buts1
+#left
 	{
 		height:117px;
 		width:30px;
@@ -101,7 +103,7 @@ body
 		margin-top:155px;
 		overflow:hidden;
 	}
-#buts2
+#right
 	{
 		height:117px;
 		width:30px;
@@ -110,13 +112,13 @@ body
 		margin-top:155px;
 		overflow:hidden;
 	}
-#buts1 img
+#left img
 		{
 			margin-top:50px;
-			margin-left:8px;
+			margin-left:10px;
 		}
-#buts2 img
+#right img
 		{
 			margin-top:50px;
-			margin-left:8px;
+			margin-left:10px;
 		}

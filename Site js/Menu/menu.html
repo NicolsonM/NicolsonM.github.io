@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>menu</title>
+    <script type="text/javascript">
+    function showElement(layer) {
+        var myLayer = document.getElementById(layer);
+        if (myLayer.style.display == "none") {
+            myLayer.style.display = "block";
+            myLayer.backgroundPosition = "top";
+        } else {
+            myLayer.style.display = "none";
+        }
+    }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="javascript:showElement('v-menu')">
+        <span>Click Here</span>
+    </a>
+    <ul id="v-menu" style="display:none;">
+        <li><a href="p1.html">Technology</a></li>
+        <li><a href="p2.html">Design</a></li>
+        <li><a href="p3.html">Css Gallery</a></li>
+        <li><a href="p4.html">Entertainment</a></li>
+        <li><a href="p5.html">Programming</a></li>
+    </ul>
+</body>
+</html>

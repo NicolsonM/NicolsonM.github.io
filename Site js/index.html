@@ -5,8 +5,10 @@
 <title>Магазин</title>
 <link rel="stylesheet" href="style/reset.css">
 <link rel="stylesheet" href="style/style.css">
+<script type="text/javascript" src="js/menu.js"></script>	
 <script type="text/javascript" src="js/slider.js"></script>
-<script type="text/javascript">
+   	
+<!--<script type="text/javascript">
 window.onload = function () {
     var menuElem = document.getElementById("myMenu");
 	var a = document.getElementById("menuProducts");
@@ -63,7 +65,8 @@ window.onload = function () {
 
 	
 }
-</script>																																																																																					
+</script>-->
+   																																																																																			
 </head>
 
 <body>
@@ -86,13 +89,14 @@ window.onload = function () {
         </div>
         <ul id="myMenu">
             	<li><a href="#">home</a></li>
-                <li id="menuProducts" id="menuClose" ><a href="#">products</a>
-                	<ul id="menuPiple">
-                    	<li><a href="#">women</a></li>
-                        <li><a href="#">men</a></li>
-                        <li><a href="#">children</a></li>
-                    </ul>
-                </li>
+            <li id="menuProducts" onclick="javascript: showElement('menuPiple')">
+                <a href="#">products</a>
+                <ul id="menuPiple">
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">children</a></li>
+                </ul>
+            </li>
                 <li><a href="#">shopping</a></li>
                 <li><a href="#">contacts</a></li>
          </ul>
@@ -102,9 +106,9 @@ window.onload = function () {
 </div><!--end of nav-->
 <div id="header">
 	<div id="headercontent">
-    	<div id="slider">
-        	<div id="buts1"><img src="images/buts1.png"></div>
-        	<div id="buts2"><img src="images/buts2.png"></div>
+    	<div id="scr">
+            <div id="left" onclick="slider.left();"><img src="images/buts1.png"></div>
+            <div id="right" onclick="slider.right();"><img src="images/buts2.png"></div>
         </div><!--end of slidert-->
     </div><!--end of headercontent-->
 </div><!--end of header-->
