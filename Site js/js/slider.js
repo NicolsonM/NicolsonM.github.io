@@ -1,27 +1,27 @@
 // JavaScript source code
 var slider = {
     slides: ['crazy_summer1.png', 'crazy_summer2.png', 'crazy_summer3.png', 'crazy_summer4.png', 'crazy_summer5.png'],
-    frame: 0, // текущий кадр для отбражения - индекс картинки из массива
-    set: function (image) { // установка нужного фона слайдеру
+    frame: 0, 
+    set: function (image) { 
         document.getElementById("scr").style.backgroundImage = "url(" + image + ")";
     },
-    init: function () { // запуск слайдера с картинкой с нулевым индексом
+    init: function () { 
         this.set(this.slides[this.frame]);
     },
-    left: function () { // крутим на один кадр влево
+    left: function () { 
         this.frame--;
         if (this.frame < 0) this.frame = this.slides.length - 1;
         this.set(this.slides[this.frame]);
     },
-    right: function () { // крутим на один кадр вправо
+    right: function () { 
         this.frame++;
         if (this.frame == this.slides.length) this.frame = 0;
         this.set(this.slides[this.frame]);
     }
 };
-window.onload = function () { // запуск слайдера после загрузки документа
+window.onload = function () { 
     slider.init();
-    setInterval(function () { // ставим пятисекундный интервал для перелистывания картинок
+    setInterval(function () { 
         slider.right();
     }, 4000);
 }
